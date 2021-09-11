@@ -1,0 +1,131 @@
+:root{
+    --white-color:#fff;
+    --black-color:#000;
+    --text-color:#333;
+    --primary-color:#ee4d2d;
+    --border-color:#dbdbdb;
+
+}
+
+*{
+    /* để tất cả các thể kế thừa  */
+    box-sizing: inherit;
+}
+
+html{
+    /* font-sizee = 10px */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width{
+    width: 100%;
+}
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* show khi hover */
+.header__navbar-item--show:hover .header__qr,
+.header__navbar-item--show:hover .header__notify{
+    display: block;
+}
+
+
+
+/* end show hover */
+
+
+/* Animation */
+@keyframes faceIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+/* End Animation */
+
+
+/* Begin Modal */
+.modal{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom:0px ;
+    left: 0px;
+    display: flex;
+    
+}
+
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.4);
+}
+
+.modal__body{
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* Ebd Modal */
+
+
+/* Begin BTN */
+.btn{
+    min-width: 142px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    line-height: 1.2rem;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.btbn--normal:hover{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.btn.btn--primary{
+    background-color:  var(--primary-color);
+    color:var(--white-color) ;
+}
+
+.btn.btn--disabled{
+    color: #a7a4a4cc;
+    cursor: default;
+    background-color: #c3c3c3;
+}
+
+.btn.btn--size-s{
+    height: 30px;
+    font-size: 1.2rem;
+    padding: 0 8px;
+}
+
+
+/* End BTN */
