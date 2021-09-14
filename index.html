@@ -144,14 +144,150 @@
                         </svg>
                     </div>
                     <div class="header__search">
-                        <input type="text" class="header__search-input" placeholder=" Nhập để tìm kiếm sản phẩm">
+
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder=" Nhập để tìm kiếm sản phẩm">
+                            
+                            <!-- lịch  sữ tìm kiếm -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sữ tìm kiếm</h3>
+
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href=""  class="header__search-history-item-link">
+                                            Kêm duong da
+                                        </a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="" class="header__search-history-item-link">
+                                            Kêm duong da
+                                        </a>
+                                    </li>
+
+                                   
+                                </ul>
+                            </div>
+                            <!-- end lịch sữ tim kiếm -->
+                        </div>
+                        
+                        <div class="header__search-select">
+                            <span class="header__search-select-label">Trong Shop này</span>
+                            <i class="header__search-select-icon fas fa-chevron-down"></i>
+
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item header__search-option-item--active ">
+                                    <span >Trong Shop này</span>
+                                    <i class=" fas fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span >Trong Shoppe</span>
+                                    <i class=" fas fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
                     </div>
 
+                    <!-- begin cart -->
                     <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-cart-plus"></i>
+
+                            <!-- begin sô lượng sản phẩm trong giỏ hàng -->
+
+                            <span class="header__cart-notice">3</span>
+
+                            <!-- end sô lượng sản phẩm trong giỏ hàng -->
+
+                            <!-- begin list cart -->
+
+                            <!-- no-cart :header__cart-list--no-cart -->
+                            <div class="header__cart-list ">
+                                <!-- không có sản phẩm -->
+                                <img src="./asset/img/no_cart.png" alt="" class="header__cart-img--no-cart">
+                                <span class="header__cart-no-cart-msg">Chưa có sản phẩm</span>
+
+                                <!-- có sản phẩm -->
+                                <h3 class="header__cart-heading">Sản phẩm đã thêm</h3>
+                                <!-- sản phẩm trong giỏ hàng -->
+                                <ul class="header__cart-list-item">
+                                    <li class="header__cart-item">
+                                        <img src="https://cf.shopee.vn/file/4e902342162b4f57215859931437d149_tn" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">bộ kêm đăc tijvhahjfajjk</h5>
+                                                
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">200.000Đ</span>
+                                                    <span class="header__cart-item-multiply">X</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Phân loại: Bạc</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__cart-item">
+                                        <img src="https://cf.shopee.vn/file/4e902342162b4f57215859931437d149_tn" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">bộ kêm đăc tijvhahjfajjk</h5>
+                                                
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">200.000Đ</span>
+                                                    <span class="header__cart-item-multiply">X</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Phân loại: Bạc</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__cart-item">
+                                        <img src="https://cf.shopee.vn/file/4e902342162b4f57215859931437d149_tn" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">bộ kêm đăc tijvhahjfajjk</h5>
+                                                
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">200.000Đ</span>
+                                                    <span class="header__cart-item-multiply">X</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Phân loại: Bạc</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                                <a href="" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+
+                            </div>
+    
+                            <!-- end list cart -->
+                        </div>
                        
-                        <i class="header__cart-icon fas fa-cart-plus"></i>
                     </div>
                     
+                    <!-- end cart -->
 
                 </div>
                  <!-- end header-with-search-->
