@@ -21,6 +21,7 @@ html{
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+/* Responsive */
 
 .grid{
     width: 1200px;
@@ -35,8 +36,21 @@ html{
 .grid__row{
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+/* text */
+.grid__column-2{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
 }
 
+.grid__column-10{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3333%;
+}
 /* show khi hover */
 .header__navbar-item--show:hover .header__qr,
 .header__navbar-item--show:hover .header__notify{
@@ -118,7 +132,7 @@ html{
     outline: none;
     cursor: pointer;
     color: var(--text-color);
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
 }
@@ -146,3 +160,60 @@ html{
 
 
 /* End BTN */
+
+/* begin selection */
+.select-input{
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.select-input__label{
+    font-size: 1.4rem;
+}
+
+.select-input__icon{
+    font-size: 1.4rem;
+    color: #858282;
+    position: relative;
+    top: 1px;
+}
+
+.select-input:hover .select-input__list{
+    display: block;
+}
+
+.select-input__list{
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    right: 0px;
+    padding:8px 12px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    list-style: none;
+    display: none;
+}
+
+.select-input__item{
+    
+}
+
+.select-input__link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    display: block;
+    padding: 4px 0px;
+}
+
+.select-input__link:hover{
+    color: var(--primary-color);
+}
+/* end selection */
