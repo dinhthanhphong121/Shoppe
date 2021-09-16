@@ -1303,7 +1303,21 @@
     font-weight: 600;
 }
 
+/* phân trang  */
+
+.home-product__pagination{
+    margin-top: 48px;
+    margin-bottom: 32px;
+}
 
 
+/* end phân trang */
 /* end product */
 /* end app__conntainer */
+
+
+/*begin  footer */
+
+
+
+/* end footer */
