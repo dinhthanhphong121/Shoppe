@@ -9,14 +9,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="./asset/css/base.css">
     <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/gird.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
+
 
     <title>Shoppe</title>
 </head>
 <body>
     <div class="app">
         <header class="header">
-            <div class="grid">
-                <nav class="header__navbar">
+            <div class="grid wide">
+                <nav class="header__navbar hide-on-mobile-table">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__navbar-item--bordel-Rgith">Kênh người bán</li>
                         <li class="header__navbar-item header__navbar-item--bordel-Rgith">Trở thành người bán hàng Shooppe</li>
@@ -167,7 +170,11 @@
 
                 <!-- begin header-with-search-->
                 <div class="header-with-search">
-                    <div class="header__logo">
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="header__mobile-search-icon fas fa-search"></i>
+                    </label>
+
+                    <div class="header__logo hide-on-table">
                         <a href="/" class="header__logo-link">
                             <svg viewBox="0 0 192 65" class="header__logo-img">
                                 <g fill-rule="evenodd">
@@ -178,7 +185,10 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="header__search">
+
+                    <input  type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
+
+                    <div class="header__search ">
 
                         <div class="header__search-input-wrap">
                             <input type="text" class="header__search-input" placeholder=" Nhập để tìm kiếm sản phẩm">
@@ -269,146 +279,6 @@
                                         </div>
                                     </li>
 
-
-                                    <li class="header__cart-item">
-                                        <img src="https://cf.shopee.vn/file/4e902342162b4f57215859931437d149_tn" alt="" class="header__cart-img">
-                                        <div class="header__cart-item-info">
-
-                                            <div class="header__cart-item-head">
-                                                <h5 class="header__cart-item-name">bộ kêm đăc tijvhahjfajjk</h5>
-                                                
-                                                <div class="header__cart-item-price-wrap">
-                                                    <span class="header__cart-item-price">200.000Đ</span>
-                                                    <span class="header__cart-item-multiply">X</span>
-                                                    <span class="header__cart-item-qnt">2</span>
-                                                </div>
-
-                                            </div>
-                                            <div class="header__cart-item-body">
-                                                <span class="header__cart-item-description">Phân loại: Bạc</span>
-                                                <span class="header__cart-item-remove">Xóa</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="header__cart-item">
-                                        <img src="https://cf.shopee.vn/file/4e902342162b4f57215859931437d149_tn" alt="" class="header__cart-img">
-                                        <div class="header__cart-item-info">
-
-                                            <div class="header__cart-item-head">
-                                                <h5 class="header__cart-item-name">bộ kêm đăc tijvhahjfajjk</h5>
-                                                
-                                                <div class="header__cart-item-price-wrap">
-                                                    <span class="header__cart-item-price">200.000Đ</span>
-                                                    <span class="header__cart-item-multiply">X</span>
-                                                    <span class="header__cart-item-qnt">2</span>
-                                                </div>
-
-                                            </div>
-                                            <div class="header__cart-item-body">
-                                                <span class="header__cart-item-description">Phân loại: Bạc</span>
-                                                <span class="header__cart-item-remove">Xóa</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="header__cart-item">
-                                        <img src="https://cf.shopee.vn/file/4e902342162b4f57215859931437d149_tn" alt="" class="header__cart-img">
-                                        <div class="header__cart-item-info">
-
-                                            <div class="header__cart-item-head">
-                                                <h5 class="header__cart-item-name">bộ kêm đăc tijvhahjfajjk</h5>
-                                                
-                                                <div class="header__cart-item-price-wrap">
-                                                    <span class="header__cart-item-price">200.000Đ</span>
-                                                    <span class="header__cart-item-multiply">X</span>
-                                                    <span class="header__cart-item-qnt">2</span>
-                                                </div>
-
-                                            </div>
-                                            <div class="header__cart-item-body">
-                                                <span class="header__cart-item-description">Phân loại: Bạc</span>
-                                                <span class="header__cart-item-remove">Xóa</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="header__cart-item">
-                                        <img src="https://cf.shopee.vn/file/4e902342162b4f57215859931437d149_tn" alt="" class="header__cart-img">
-                                        <div class="header__cart-item-info">
-
-                                            <div class="header__cart-item-head">
-                                                <h5 class="header__cart-item-name">bộ kêm đăc tijvhahjfajjk</h5>
-                                                
-                                                <div class="header__cart-item-price-wrap">
-                                                    <span class="header__cart-item-price">200.000Đ</span>
-                                                    <span class="header__cart-item-multiply">X</span>
-                                                    <span class="header__cart-item-qnt">2</span>
-                                                </div>
-
-                                            </div>
-                                            <div class="header__cart-item-body">
-                                                <span class="header__cart-item-description">Phân loại: Bạc</span>
-                                                <span class="header__cart-item-remove">Xóa</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="header__cart-item">
-                                        <img src="https://cf.shopee.vn/file/4e902342162b4f57215859931437d149_tn" alt="" class="header__cart-img">
-                                        <div class="header__cart-item-info">
-
-                                            <div class="header__cart-item-head">
-                                                <h5 class="header__cart-item-name">bộ kêm đăc tijvhahjfajjk</h5>
-                                                
-                                                <div class="header__cart-item-price-wrap">
-                                                    <span class="header__cart-item-price">200.000Đ</span>
-                                                    <span class="header__cart-item-multiply">X</span>
-                                                    <span class="header__cart-item-qnt">2</span>
-                                                </div>
-
-                                            </div>
-                                            <div class="header__cart-item-body">
-                                                <span class="header__cart-item-description">Phân loại: Bạc</span>
-                                                <span class="header__cart-item-remove">Xóa</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="header__cart-item">
-                                        <img src="https://cf.shopee.vn/file/4e902342162b4f57215859931437d149_tn" alt="" class="header__cart-img">
-                                        <div class="header__cart-item-info">
-
-                                            <div class="header__cart-item-head">
-                                                <h5 class="header__cart-item-name">bộ kêm đăc tijvhahjfajjk</h5>
-                                                
-                                                <div class="header__cart-item-price-wrap">
-                                                    <span class="header__cart-item-price">200.000Đ</span>
-                                                    <span class="header__cart-item-multiply">X</span>
-                                                    <span class="header__cart-item-qnt">2</span>
-                                                </div>
-
-                                            </div>
-                                            <div class="header__cart-item-body">
-                                                <span class="header__cart-item-description">Phân loại: Bạc</span>
-                                                <span class="header__cart-item-remove">Xóa</span>
-                                            </div>
-                                        </div>
-                                    </li><li class="header__cart-item">
-                                        <img src="https://cf.shopee.vn/file/4e902342162b4f57215859931437d149_tn" alt="" class="header__cart-img">
-                                        <div class="header__cart-item-info">
-
-                                            <div class="header__cart-item-head">
-                                                <h5 class="header__cart-item-name">bộ kêm đăc tijvhahjfajjk</h5>
-                                                
-                                                <div class="header__cart-item-price-wrap">
-                                                    <span class="header__cart-item-price">200.000Đ</span>
-                                                    <span class="header__cart-item-multiply">X</span>
-                                                    <span class="header__cart-item-qnt">2</span>
-                                                </div>
-
-                                            </div>
-                                            <div class="header__cart-item-body">
-                                                <span class="header__cart-item-description">Phân loại: Bạc</span>
-                                                <span class="header__cart-item-remove">Xóa</span>
-                                            </div>
-                                        </div>
-                                    </li>
                                 
 
 
@@ -428,13 +298,36 @@
                 </div>
                  <!-- end header-with-search-->
             </div>
+            <ul class="header__sort-bar">
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">
+                        Liên quan
+                    </a>
+                </li>
+                <li class="header__sort-item header__sort-item--active">
+                    <a href="" class="header__sort-link">
+                        Mới nhất
+                    </a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">
+                        Bán
+                    </a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">
+                        Giá
+                    </a>
+                </li>
+            </ul>
+
            
         </header>
 
         <div class="app__conntainer">
-           <div class="grid">
-                <div class="grid__row app__contenr">
-                    <div class="grid__column-2">
+           <div class="grid wide">
+                <div class="row sm-gutter app__contenr">
+                    <div class="col l-2 m-0 c-0">
                         <nav class="category">
                             <h3 class="category__heading">
                                 <i class="category__heading-icon fas fa-list"></i>
@@ -461,8 +354,8 @@
                         </nav>
                     </div>
     
-                    <div class="grid__column-10">
-                        <div class="home-filter">
+                    <div class="col l-10 m-12 c-12">
+                        <div class="home-filter hide-on-mobile-table">
                             <span class="home-filter__label">Sắp xếp theo</span>
                             <button class="home-filter__btn btn ">Phổ biến</button>
                             <button class="home-filter__btn btn  btn--primary">Mới nhất</button>
@@ -497,10 +390,138 @@
                             </div>
                         </div>
 
+                        <!-- mobi category -->
+
+                        <nav class="mobile-category">
+                            <ul class="mobile-category__list">
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">
+                                        dụng cụ và thiết
+                                    </a>
+                                </li>
+
+
+
+
+
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">
+                                        dụng cụ và thiết bị tiện ích
+                                    </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">
+                                        dụng cụ và thiết bị tiện ích
+                                    </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">
+                                        dụng cụ và thiết bị tiện ích
+                                    </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">
+                                        dụng cụ và thiết bị tiện ích
+                                    </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">
+                                        dụng cụ và thiết bị tiện ích
+                                    </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">
+                                        dụng cụ và thiết bị tiện ích
+                                    </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">
+                                        dụng cụ và thiết bị tiện ích
+                                    </a>
+                                </li>
+
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">
+                                        dụng cụ và thiết bị tiện ích
+                                    </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">
+                                        dụng cụ và thiết bị tiện ích
+                                    </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">
+                                        dụng cụ và thiết bị tiện ích
+                                    </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">
+                                        dụng cụ và thiết bị tiện ích
+                                    </a>
+                                </li>
+
+                                 <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">
+                                        dụng cụ và thiết bị tiện ích
+                                    </a>
+                                </li>
+                                 <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">
+                                        dụng cụ và thiết bị tiện ích
+                                    </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">
+                                        dụng cụ và thiết bị tiện ích
+                                    </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">
+                                        dụng cụ và thiết bị tiện ích
+                                    </a>
+                                </li> <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">
+                                        dụng cụ và thiết bị tiện ích
+                                    </a>
+                                </li> <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">
+                                        dụng cụ và thiết bị tiện ích
+                                    </a>
+                                </li> <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">
+                                        dụng cụ và thiết bị tiện ích
+                                    </a>
+                                </li> <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">
+                                        dụng cụ và thiết bị tiện ích
+                                    </a>
+                                </li> <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">
+                                        dụng cụ và thiết bị tiện ích
+                                    </a>
+                                </li> <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">
+                                        dụng cụ và thiết bị tiện ích
+                                    </a>
+                                </li> <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">
+                                        dụng cụ và thiết bị tiện ích
+                                    </a>
+                                </li> <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link">
+                                        dụng cụ và thiết bị tiện ích
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </nav>
+
+
                         <!-- begin chứa sản phẩm -->
                         <div class="home-product">
-                            <div class="grid__row ">
-                                <div class="grid__column-2-4 ">
+                            <div class="row sm-gutter ">
+                                <div class="col l-2-4 m-4 c-6  ">
                                     <!-- sản phẩm -->
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
@@ -543,7 +564,1649 @@
                                 </div>
 
 
-                                <div class="grid__column-2-4">
+
+
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+                                <div class="col l-2-4 m-4 c-6  ">
                                     <!-- sản phẩm -->
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
@@ -585,7 +2248,7 @@
                                    
                                 </div>
 
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6" >
                                     <!-- sản phẩm -->
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
@@ -627,7 +2290,7 @@
                                    
                                 </div>
 
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6" >
                                     <!-- sản phẩm -->
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
@@ -669,7 +2332,7 @@
                                    
                                 </div>
 
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6" >
                                     <!-- sản phẩm -->
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
@@ -711,7 +2374,7 @@
                                    
                                 </div>
 
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6" >
                                     <!-- sản phẩm -->
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
@@ -753,7 +2416,7 @@
                                    
                                 </div>
 
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6" >
                                     <!-- sản phẩm -->
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
@@ -795,7 +2458,7 @@
                                    
                                 </div>
 
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6" >
                                     <!-- sản phẩm -->
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
@@ -837,7 +2500,7 @@
                                    
                                 </div>
 
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6" >
                                     <!-- sản phẩm -->
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
@@ -879,7 +2542,49 @@
                                    
                                 </div>
 
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6" >
+                                    <!-- sản phẩm -->
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
+                                        <h5 class="home-product-item__name">Gói Tẩy Tế Bào Da Chết OHUI làm trắng da - Ohui Clear Science Soft Peeling</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.200.000Đ</span>
+                                            <span class="home-product-item__price-current">1.000.000Đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--like">
+                                                <i class="home-product-item__like-icon-empty  far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">
+                                                88 Đã bán
+                                            </span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__bank">whoo</span>
+                                            <span class="home-product-item__origin-name">Nhật bản</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            <span class="home-product-item__favourite-text">Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">Giảm</span>
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-6" >
                                     <!-- sản phẩm -->
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/78d20018e8932ac13bc01a3f30dd5685_tn);"></div>
@@ -953,9 +2658,7 @@
                             <li class="pagination-item">
                                 <a href="" class="pagination-item__link">...</a>
                             </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">13</a>
-                            </li>
+                          
                             <li class="pagination-item">
                                 <a href="" class="pagination-item__link">14</a>
                             </li>
@@ -975,9 +2678,9 @@
         </div>
 
         <footer class="footer">
-            <div class="grid">
-                <div class="grid__row">
-                    <div class="grid__column-2-4">
+            <div class="grid wide footer__contenr">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6" >
                         <h3 class="footer__heading">Chăm sóc khách hàng</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -1000,7 +2703,7 @@
                     </div>
 
 
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6" >
                         <h3 class="footer__heading">Giới thiệu</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -1022,7 +2725,7 @@
                         </ul>
                     </div>
 
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6" >
                         <h3 class="footer__heading">Danh mục</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -1047,7 +2750,7 @@
                         </ul>
                     </div>
 
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6" >
                         <h3 class="footer__heading">Theo dõi</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -1069,7 +2772,7 @@
                         </ul>
                     </div>
 
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-8 c-12" >
                         <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
                         <div class="footer__dowload">
                             <img src="asset/img/Qr_code.png" alt="Qr_code" class="footer__dowload-img">
@@ -1086,7 +2789,7 @@
                
             </div>
             <div class="footer__bottom">
-               <div class="grid">
+               <div class="grid wide">
                     <p class="footer__text">&#169; - Đinh thanh phong</p>
                </div>
             </div>
